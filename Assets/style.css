@@ -13,10 +13,22 @@ body {
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3em;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+body::-webkit-scrollbar-thumb {
+    width: 0.2em;
+    background-color: turquoise;
 }
 
 #aboutCard {
-    position: fixed;
+    position: absolute;
     left: 50%; top: 50%;
     width: 700px;
     height: auto;
@@ -99,4 +111,34 @@ body {
 #Paimon {
     position: fixed;
     right: 0; bottom: 0;
+    height: 300px;
+}
+
+/* Responsive CSS when screen width <= 700px */
+@media only screen and (max-width: 1000px) {
+    #Paimon {
+        height: 225px;
+        position: fixed;
+        top: 0; right: 0;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #aboutCard {
+        width: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        border-radius: 0;
+        animation: fall-fade-responsive 1.5s 1 forwards ease-in-out;
+    }
+    @keyframes fall-fade-responsive {
+        0%   {opacity: 0.5; transform: translate(0, -25px);}
+        100% {opacity: 1; transform: translate(0, 0);}
+    }
+    #Paimon {
+        height: 150px;
+        position: fixed;
+        top: 0; right: 0;
+        z-index: 2;
+    }
 }
