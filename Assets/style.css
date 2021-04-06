@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(./Images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+#aboutCard {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    border: 5px rgba(0, 0, 0, 0.2) solid;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    display: inline-block;
+    position: relative;
+    left: 50%; 
+    transform: translate(-50%, 0);
+    margin: 15px 0px;
+    padding: 7px 14px;
+    border: 1px solid turquoise;
+    border-radius: 3px;
+    color: turquoise;
+    font-size: 30px;
+    font-family: Raleway;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#aboutCard img {
+    display: block;
+    width: 225px; height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 100%;
+    animation: pfp-blink 2.5s infinite forwards ease-in-out;
+}
+
+@keyframes pfp-blink {
+    0%   {border: 3px solid rgba(255, 255, 255, 0.2);}
+    50%  {border: 3px solid turquoise;}
+    100% {border: 3px solid rgba(255, 255, 255, 0.2);}
+}
+
+#aboutText {
+    width: 100%;
+    font-size: 16px;
+    font-family: Raleway;
+    line-height: 25px;
+    color: white;
+    text-align: justify;
+}
+
+.highlighted {
+    color: turquoise;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+}
+
+#icons {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.fa-heart {
+    color: turquoise;
+}
+
+#icons i:not(.fa-heart):hover {
+    color: turquoise;
+    transition: 0.2s ease-in;
+}
