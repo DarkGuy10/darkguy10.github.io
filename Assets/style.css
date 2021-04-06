@@ -22,6 +22,12 @@ body {
     border: 5px rgba(0, 0, 0, 0.2) solid;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    animation: fall-fade 1s 1 forwards ease-out;
+}
+
+@keyframes fall-fade {
+    0%   {opacity: 0.5; transform: translate(-50%, calc(-50% - 25px));}
+    100% {opacity: 1; transform: translate(-50%, -50%);}
 }
 
 #name {
@@ -67,7 +73,7 @@ body {
 .highlighted {
     color: turquoise;
     padding: 3px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     text-decoration: underline;
 }
 
