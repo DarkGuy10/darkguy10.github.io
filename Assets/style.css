@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#icons {
+#codeIcons {
     display: block;
     font-size: 16px;
     text-align: center;
@@ -99,9 +99,48 @@ body::-webkit-scrollbar-thumb {
     color: turquoise;
 }
 
-#icons i:not(.fa-heart):hover {
+#codeIcons i:not(.fa-heart):hover {
     color: turquoise;
     transition: 0.2s ease-in;
+}
+
+#contactIcons {
+    position: absolute;
+    top: 10px; left: 10px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+#contactIcons li{
+    display: block;
+    padding: 6px 5px;
+    text-decoration: none; 
+}
+
+#contactIcons li i {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#contactIcons li i:hover{
+    color: turquoise;
+    transition: 0.1s ease-in;
+}
+
+.tooltip {
+    display: none;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 7px 14px;
+    font-family: Raleway;
+    color: turquoise;
+    position: relative;
+    bottom: 7px;
+    z-index: 3;
+}
+
+@keyframes slide-fade {
+    0%   {opacity: 0.5; left: 5px;}
+    100% {opacity: 1; left: 0;}
 }
 
 #Paimon {
