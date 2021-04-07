@@ -9,7 +9,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(./Images/background.jpg);
+    background-image: url(./Images/background.webp);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
