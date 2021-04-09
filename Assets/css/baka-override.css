@@ -1,0 +1,67 @@
+
+body {
+    background-image: url(./../../Assets/Images/background-baka.jpg) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3em;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+body::-webkit-scrollbar-thumb {
+    width: 0.2em;
+    background-color: #4340e0;
+}
+
+#aboutCard {
+    animation: none;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+#name {
+    border: 1px solid #408be0;
+    color: #408be0;
+    background-color: rgba(34, 34, 34, 0.5);
+}
+
+#pfp {
+    animation: pfp-blink 2.5s infinite forwards ease-in-out;
+}
+
+@keyframes pfp-blink {
+    0%   {border: 3px solid rgba(255, 255, 255, 0.2);}
+    50%  {border: 3px solid #408be0;}
+    100% {border: 3px solid rgba(255, 255, 255, 0.2);}
+}
+
+.highlighted {
+    color: #408be0;
+    background-color: rgba(34, 34, 34, 0.5);
+}
+
+.fa-heart {
+    color: #408be0;
+}
+
+#codeIcons i:not(.fa-heart):hover {
+    color: #408be0;
+}
+
+#contactIcons li i:hover{
+    color: #408be0;
+}
+
+.tooltip {
+    color: #408be0;
+}
+
+/* Responsive CSS when screen width <= 700px */
+
+@media only screen and (max-width: 700px) {
+    #aboutCard {
+        animation: none;
+        transform: none;
+    }
+}

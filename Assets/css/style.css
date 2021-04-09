@@ -6,7 +6,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(./Images/background.webp);
+    background-image: url(./../Images/background.webp);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#aboutCard img {
+#pfp {
     display: block;
     width: 225px; height: auto;
     position: relative;
@@ -80,7 +80,6 @@ body::-webkit-scrollbar-thumb {
     font-family: Raleway;
     line-height: 25px;
     color: white;
-    text-align: justify;
     user-select: text;
     -webkit-user-select: text;
 }
@@ -153,6 +152,27 @@ body::-webkit-scrollbar-thumb {
     height: 300px;
 }
 
+#aboutCard img:not(#pfp) {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 8px;
+}
+
+.specialText {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 7px;
+    text-align: center;
+}
+
 /* Responsive CSS when screen width <= 700px */
 @media only screen and (max-width: 1000px) {
     #Paimon {
@@ -180,5 +200,8 @@ body::-webkit-scrollbar-thumb {
         position: fixed;
         top: 0; right: 0;
         z-index: 2;
+    }
+    #aboutCard img:not(#pfp) {
+        max-width: 80%;
     }
 }
