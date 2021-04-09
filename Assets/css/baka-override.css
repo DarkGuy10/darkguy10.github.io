@@ -15,9 +15,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 #aboutCard {
-    animation: none;
-    top: 0;
     transform: translate(-50%, 0);
+    animation: fade-slide-alt 1s 1 forwards ease-out;
+}
+
+@keyframes fade-slide-alt {
+    0%   {top: -25px; opacity: 0.5;}
+    100% {top: 0; opacity: 1;}
 }
 
 #name {
@@ -61,7 +65,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 700px) {
     #aboutCard {
-        animation: none;
+        animation: fade-slide-alt 1s 1 forwards ease-out;
         transform: none;
     }
 }
