@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
 
 #pfp {
     display: block;
-    width: 225px; height: auto;
+    width: 225px; height: 225px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
