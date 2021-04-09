@@ -1,4 +1,4 @@
-document.querySelectorAll('#contactIcons li').forEach(li => {
+document.querySelectorAll('#leftIcons li').forEach(li => {
     const tooltip = li.querySelector('span');
     const icon = li.querySelector('i');
     icon.onmouseover = () => {

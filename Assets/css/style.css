@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#codeIcons {
+#footerIcons {
     display: block;
     font-size: 16px;
     text-align: center;
@@ -102,30 +102,30 @@ body::-webkit-scrollbar-thumb {
     color: turquoise;
 }
 
-#codeIcons i:not(.fa-heart):hover {
+#footerIcons i:not(.fa-heart):hover {
     color: turquoise;
     transition: 0.2s ease-in;
 }
 
-#contactIcons {
+#leftIcons {
     position: absolute;
     top: 10px; left: 10px;
     list-style-type: none;
     padding: 0;
     font-size: 16px;
 }
-#contactIcons li{
+#leftIcons li{
     display: block;
     padding: 6px 5px;
     text-decoration: none; 
 }
 
-#contactIcons li i {
+#leftIcons li i {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.4);
 }
 
-#contactIcons li i:hover{
+#leftIcons li i:hover{
     color: turquoise;
     transition: 0.1s ease-in;
 }

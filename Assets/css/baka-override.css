@@ -45,11 +45,11 @@ body::-webkit-scrollbar-thumb {
     color: #408be0;
 }
 
-#codeIcons i:not(.fa-heart):hover {
+#footerIcons i:not(.fa-heart):hover {
     color: #408be0;
 }
 
-#contactIcons li i:hover{
+#leftIcons li i:hover{
     color: #408be0;
 }
 
